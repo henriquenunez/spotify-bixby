@@ -44,7 +44,7 @@ func searchSong(w http.ResponseWriter, r *http.Request) {
 
 	w.Header().Set("Content-Type", "application/json")
         w.WriteHeader(http.StatusOK)
-	w.Write([]byte(fmt.Sprintln(`{"uri": "`, item_uri, `"}`)))
+	w.Write([]byte(fmt.Sprintln(`{"uri": "`+item_uri+`"}`)))
 }
 
 
