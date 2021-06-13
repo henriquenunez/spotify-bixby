@@ -54,8 +54,8 @@ func refreshToken(m *sync.Mutex) {
 	// Request token
 	for {
 		config := &clientcredentials.Config{
-			ClientID:     os.GetEnv("SPOTIFY_CLIENT_ID"),
-			ClientSecret: os.GetEnv("SPOTIFY_CLIENT_SECRET"),
+			ClientID:     os.Getenv("SPOTIFY_CLIENT_ID"),
+			ClientSecret: os.Getenv("SPOTIFY_CLIENT_SECRET"),
 			TokenURL:     spotify.TokenURL,
 		}
 		token, err := config.Token(context.Background())
