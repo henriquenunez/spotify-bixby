@@ -1,0 +1,8 @@
+endpoints {
+   action-endpoints {
+     action-endpoint (SearchArtist) {
+       accepted-inputs (artist_name)
+       local-endpoint ("SearchArtist.js")
+     }
+   }
+}

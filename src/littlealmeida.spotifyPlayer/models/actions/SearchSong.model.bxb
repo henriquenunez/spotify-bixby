@@ -1,0 +1,17 @@
+action (SearchSong) {
+  description (Searches for an artist on Spotify.)
+  collect {
+    input (song_name) {
+      type (SongName)
+      min (Required)
+      max (One)
+    }
+    input (artist_name) {
+      type (ArtistName)
+      min (Optional)
+      max (One)
+    }
+  }
+  output (RetrievedItem)
+  type(Search)
+}

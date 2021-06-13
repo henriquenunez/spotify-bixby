@@ -1,0 +1,12 @@
+action (SearchArtist) {
+  description (Searches for an artist on Spotify.)
+  collect {
+    input (artist_name) {
+      type (ItemName)
+      min (Required)
+      max (One)
+    }
+  }
+  output (RetrievedItem)
+  type(Search)
+}

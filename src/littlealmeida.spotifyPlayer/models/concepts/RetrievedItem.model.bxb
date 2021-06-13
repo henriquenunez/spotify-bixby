@@ -1,0 +1,3 @@
+text (RetrievedItem) {
+  description (The retrieved item from the API.)
+}

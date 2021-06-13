@@ -1,0 +1,8 @@
+capsule-info {
+  display-name (Spotify Player)
+  developer-name (Henrique Núñez)
+  description ("Example capsule description")
+  dispatch-name (Example Capsule)
+  // Set your own image for your capsule's icon
+  icon-asset (images/icons/bixby_launcher.png)
+}
